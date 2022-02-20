@@ -1,0 +1,201 @@
+@keyframes animated{
+    from{
+        opacity: 0%;
+    }
+    to{
+        opacity: 100%;
+    }
+}
+
+
+
+
+*,
+::after,
+::before{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h4{
+    text-align: center;
+
+}
+hr{
+    margin-top: 20px;
+}
+
+.nav-container{
+    z-index: 10;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+    padding: 0vh  3rem;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 2px 4px 1px;
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
+    background-color: white;
+}
+
+.pop{
+    display: flex;
+    flex-direction: column;
+    border: 2px solid rgba(216, 216, 216, 0.513);
+    position: absolute;
+    border-radius: 15px;
+    background-color: white;
+    top: 4rem;
+    animation: animated 0.3s ease-in-out ;
+    box-shadow: rgba(111, 37, 153, 0.157) 0px 3px 5px;
+    height: fit-content;
+}
+.pop-login{
+    padding: 0.5rem;
+    width: 200px;
+    right: 3rem;
+}
+.pop-schedule{
+    padding: 1rem;
+    padding-right: 0;
+    width: 250px;
+    left: 3rem;
+    height: 300px;
+    overflow-y: scroll;
+}
+
+
+::-webkit-scrollbar
+{
+
+	width: 8px;
+	background-color: #f6ebff;
+}
+
+::-webkit-scrollbar-thumb
+{
+	background-color: blueviolet;
+	border-radius: 8px;
+}
+
+.login-container{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 1rem;
+    justify-content: start;
+    align-items: flex-start;
+    
+    gap: 2px;
+}
+label[name="username"],label[name="password"]{
+    margin: 5px 0px -2px 0px;
+    font-size: 12px;
+    color: rgb(184, 184, 184);
+    font-weight: 400;
+
+}
+
+button[type="submit"]{
+    margin-top:2rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    color: blueviolet;
+    width: 60%;
+    font-size: 15px;
+    font-weight: 600;
+    border: 2px solid blueviolet;
+    border-radius: 40px;
+    padding: 8px ;
+    background-color: white;
+    cursor: pointer;
+    transition: all ease-in-out 0.3s;
+}
+button[type="submit"]:hover{
+    background-color: rgb(132, 0, 255);
+    color: white;
+
+
+}
+.link{
+    cursor: pointer;
+}
+input[name="username"]:focus,
+input[name="password"]:focus{
+    outline: none;
+    border-bottom: 2px solid rgb(193, 118, 243);
+    transition: all 0.5s ease-in-out;
+}
+ input[name="username"],input[name="password"] {
+    height: max-content;
+    border: none;
+    width: 100%;
+    border-bottom: 2px solid rgb(240, 239, 239);}
+
+ input[name="username"]:active,input[name="password"]:active{
+    background-color: transparent;
+ }
+
+
+input[name="username"]:hover::placeholder,
+input[name="password"]:hover::placeholder {
+    color: transparent;
+    transition: all 0.2s ease-in-out;
+
+}
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px white inset;
+ }
+
+::placeholder{
+    color: rgb(120, 115, 124);
+    font-family: Mukta;
+    font-size: 15px;
+}
+::placeholder:hover{
+    font: 30px;
+
+}
+.input-container-login{
+    position: relative;
+}
+.show-password{
+    position: absolute;
+    cursor: pointer;
+    color: rgb(120, 115, 124);
+    width: fit-content;
+    bottom: -3px;
+
+    right: 0;
+
+}
+
+.notification{
+    color: red;
+    position: absolute;
+    bottom: 31%;
+    font-size: 11px;
+}
+
+.schedule-list-box{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    border-bottom: 4px solid rgb(175, 147, 200);
+    gap: 1px;
+    width: 90%;
+    margin:0px 0px 5px 5px;
+}
+.schedule-delete{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    cursor: pointer;
+}
+
+.history-link{
+    cursor: pointer;
+    color: black;
+}

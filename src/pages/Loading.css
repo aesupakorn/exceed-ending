@@ -1,0 +1,15 @@
+.loading{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 5vh;
+    border-radius: 30px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(250, 240, 255, 0.829);
+    z-index: 100;
+}
